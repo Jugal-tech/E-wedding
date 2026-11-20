@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aarav &amp; Priya — Royal Wedding Celebration | Jaipur 2027</title>
+  <meta name="description" content="Official Royal Rajasthani Wedding Celebration of Aarav Singh &amp; Priya Rathore at Jaipur Palace Grounds, 17–19 February 2027." />
+
+  <!-- Google Fonts: Cinzel, Cormorant Garamond, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========================================================================
+       SHARED REUSABLE SVG ORNAMENTS
+  ======================================================================== -->
+  <svg style="display: none;" aria-hidden="true">
+    <!-- Royal Lotus Crest -->
+    <symbol id="icon-royal-lotus-crest" viewBox="0 0 120 120">
+      <circle cx="60" cy="60" r="54" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3" />
+      <circle cx="60" cy="60" r="47" stroke="currentColor" stroke-width="1.2" />
+      <path d="M60 14 C68 26, 86 26, 94 38 C102 50, 102 70, 94 82 C86 94, 68 94, 60 106 C52 94, 34 94, 26 82 C18 70, 18 50, 26 38 C34 26, 52 26, 60 14 Z" stroke="currentColor" stroke-width="1" fill="rgba(212, 175, 55, 0.06)" />
+      <path d="M60 28 C66 42, 66 56, 60 72 C54 56, 54 42, 60 28 Z" fill="currentColor" opacity="0.92" />
+      <path d="M60 72 C48 62, 40 48, 43 35 C51 43, 56 56, 60 72 Z" fill="currentColor" opacity="0.78" />
+      <path d="M60 72 C72 62, 80 48, 77 35 C69 43, 64 56, 60 72 Z" fill="currentColor" opacity="0.78" />
+      <path d="M60 74 C42 72, 31 62, 30 50 C40 53, 50 61, 60 74 Z" fill="currentColor" opacity="0.58" />
+      <path d="M60 74 C78 72, 89 62, 90 50 C80 53, 70 61, 60 74 Z" fill="currentColor" opacity="0.58" />
+      <path d="M44 80 Q60 87 76 80" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+      <circle cx="60" cy="89" r="2.5" fill="currentColor" />
+    </symbol>
+
+    <!-- Corner Filigree -->
+    <symbol id="icon-corner-filigree" viewBox="0 0 100 100">
+      <path d="M4 96 V28 C4 14 14 4 28 4 H96" stroke="currentColor" stroke-width="1.5" stroke-opacity="0.85" fill="none" />
+      <path d="M12 96 V32 C12 20 20 12 32 12 H96" stroke="currentColor" stroke-width="0.8" stroke-opacity="0.5" fill="none" />
+      <path d="M12 42 C24 42 42 24 42 12" stroke="currentColor" stroke-width="1.2" stroke-opacity="0.7" fill="none" />
+      <circle cx="24" cy="24" r="3.5" fill="currentColor" fill-opacity="0.85" />
+      <circle cx="12" cy="56" r="2" fill="currentColor" fill-opacity="0.6" />
+      <circle cx="56" cy="12" r="2" fill="currentColor" fill-opacity="0.6" />
+    </symbol>
+
+    <!-- Section Divider Emblem -->
+    <symbol id="icon-divider-crest" viewBox="0 0 36 20">
+      <path d="M18 0 L23 10 L18 20 L13 10 Z" fill="currentColor" opacity="0.95" />
+      <circle cx="6" cy="10" r="2" fill="currentColor" opacity="0.65" />
+      <circle cx="30" cy="10" r="2" fill="currentColor" opacity="0.65" />
+    </symbol>
+
+    <!-- Palace Skyline Silhouette -->
+    <symbol id="icon-palace-skyline" viewBox="0 0 1440 260">
+      <path d="M0 190 Q240 135 480 175 T960 155 T1440 185 V260 H0 Z" fill="#1A0308" />
+      <path d="M0 260 V185 H140 V155 Q175 118 210 155 V185 H420 V145 Q460 102 500 145 V185 H670 V130 Q720 75 770 130 V185 H940 V145 Q980 102 1020 145 V185 H1230 V155 Q1265 118 1300 155 V185 H1440 V260 Z" fill="#110205" stroke="#D4AF37" stroke-opacity="0.28" stroke-width="1" />
+    </symbol>
+  </svg>
+
+  <!-- ========================================================================
+       PAGE 1: FULL-SCREEN ROYAL DIGITAL INVITATION CARD (STAGE 1)
+  ======================================================================== -->
+  <section id="stage-invitation" class="stage-container active">
+    <!-- Depth Layer 1: Palace Backdrop Photo -->
+    <img 
+      src="https://images.pexels.com/photos/3581368/pexels-photo-3581368.jpeg?auto=compress&cs=tinysrgb&w=1600" 
+      alt="Jaipur Palace Architecture" 
+      class="invitation-bg-img"
+      onerror="this.src=window.createIndianWeddingFallback('JAIPUR PALACE', 'ROYAL RAJASTHAN')"
+    />
+
+    <!-- Depth Layer 2: Jali Lattice, Palace Skyline & Golden Embers -->
+    <div class="jali-lattice"></div>
+    <div class="invitation-radial-glow"></div>
+    <svg class="palace-skyline" preserveAspectRatio="none"><use href="#icon-palace-skyline"></use></svg>
+
+    <div class="embers-container">
+      <span class="ember" style="left: 10%; top: 22%; width: 6px; height: 6px; animation: royalFloat 7s ease-in-out 0s infinite;"></span>
+      <span class="ember" style="left: 22%; top: 68%; width: 8px; height: 8px; animation: royalFloat 9s ease-in-out 1.4s infinite;"></span>
+      <span class="ember" style="left: 36%; top: 34%; width: 4px; height: 4px; animation: royalFloat 6.5s ease-in-out 2.6s infinite;"></span>
+      <span class="ember" style="left: 64%; top: 26%; width: 6px; height: 6px; animation: royalFloat 8s ease-in-out 0.8s infinite;"></span>
+      <span class="ember" style="left: 78%; top: 64%; width: 8px; height: 8px; animation: royalFloat 9.5s ease-in-out 3.1s infinite;"></span>
+      <span class="ember" style="left: 89%; top: 30%; width: 6px; height: 6px; animation: royalFloat 7.5s ease-in-out 1.9s infinite;"></span>
+    </div>
+
+    <!-- Sliding Palace Doors (Opening Animation) -->
+    <div id="doors-left" class="palace-door left">
+      <div class="door-crest-handle">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.735H5.81a1 1 0 0 1-.957-.735L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"></path></svg>
+      </div>
+    </div>
+    <div id="doors-right" class="palace-door right">
+      <div class="door-crest-handle">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.735H5.81a1 1 0 0 1-.957-.735L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"></path></svg>
+      </div>
+    </div>
+
+    <!-- 3D Tilting Jharokha Arch Invitation Card -->
+    <div id="invitation-card" class="invitation-card">
+      <div class="card-halo"></div>
+      <div class="card-inner-frame"></div>
+      <svg class="card-filigree bottom-left" style="color: var(--gold-primary);"><use href="#icon-corner-filigree"></use></svg>
+      <svg class="card-filigree bottom-right" style="color: var(--gold-primary);"><use href="#icon-corner-filigree"></use></svg>
+
+      <p class="shloka-header">॥ श्री गणेशाय नमः ॥</p>
+
+      <div style="display: flex; justify-content: center; margin-bottom: 1rem;">
+        <svg width="74" height="74" style="color: var(--gold-primary); filter: drop-shadow(0 4px 12px rgba(212,175,55,0.3));">
+          <use href="#icon-royal-lotus-crest"></use>
+        </svg>
+      </div>
+
+      <p class="families-title">Singh &amp; Rathore Families</p>
+
+      <div class="couple-names-wrap">
+        <h1 class="gold-gradient-text">Aarav</h1>
+        <div class="couple-names-amp">
+          <span class="amp-line"></span>
+          <span class="amp-sym">&amp;</span>
+          <span class="amp-line"></span>
+        </div>
+        <h1 class="gold-gradient-text">Priya</h1>
+      </div>
+
+      <div class="section-divider">
+        <div class="divider-line-group">
+          <span class="divider-line"></span>
+          <svg class="divider-icon"><use href="#icon-divider-crest"></use></svg>
+          <span class="divider-line right"></span>
+        </div>
+      </div>
+
+      <div class="invitation-dates">
+        <p class="date-line">17 – 19 February 2027</p>
+        <p class="venue-line">Jaipur, Rajasthan</p>
+      </div>
+
+      <button id="btn-open-invitation" class="btn-open-invitation gold-gradient-bg" aria-label="Open Wedding Invitation">
+        <span>Open Invitation</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PAGE 2: CINEMATIC WELCOME SCREEN (STAGE 2)
+  ======================================================================== -->
+  <section id="stage-welcome" class="stage-container">
+    <img 
+      src="https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=1600" 
+      alt="Aarav and Priya Sacred Indian Wedding Varmala" 
+      class="welcome-hero-img"
+      onerror="this.src=window.createIndianWeddingFallback('AARAV & PRIYA', 'SHUBH VIVAH • JAIPUR')"
+    />
+    <div class="welcome-overlay"></div>
+    <div class="jali-lattice"></div>
+    <svg class="palace-skyline" preserveAspectRatio="none"><use href="#icon-palace-skyline"></use></svg>
+
+    <div class="embers-container">
+      <span class="ember" style="left: 14%; top: 28%; width: 6px; height: 6px; animation: royalFloat 7.5s ease-in-out 0s infinite;"></span>
+      <span class="ember" style="left: 45%; top: 72%; width: 7px; height: 7px; animation: royalFloat 8.5s ease-in-out 1.2s infinite;"></span>
+      <span class="ember" style="left: 82%; top: 38%; width: 5px; height: 5px; animation: royalFloat 6.8s ease-in-out 2.1s infinite;"></span>
+    </div>
+
+    <!-- Header -->
+    <header class="welcome-header">
+      <button id="btn-back-invitation" class="btn-back-invitation">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        <span>Invitation Card</span>
+      </button>
+
+      <button id="btn-welcome-audio" class="btn-audio-pill" aria-label="Toggle classical music">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+        <span>Play Sitar Ambience</span>
+      </button>
+    </header>
+
+    <!-- Center Content -->
+    <main class="welcome-content">
+      <p class="welcome-tagline">Khamma Ghani • Jaipur</p>
+      <h1 class="welcome-title">
+        Aarav <span style="font-style: italic; font-weight: 300; color: var(--gold-primary);">&amp;</span> Priya
+      </h1>
+
+      <!-- Countdown Grid -->
+      <div class="countdown-grid">
+        <div class="countdown-box">
+          <div id="countdown-days" class="countdown-val">00</div>
+          <div class="countdown-lbl">Days</div>
+        </div>
+        <div class="countdown-box">
+          <div id="countdown-hours" class="countdown-val">00</div>
+          <div class="countdown-lbl">Hours</div>
+        </div>
+        <div class="countdown-box">
+          <div id="countdown-minutes" class="countdown-val">00</div>
+          <div class="countdown-lbl">Minutes</div>
+        </div>
+        <div class="countdown-box">
+          <div id="countdown-seconds" class="countdown-val">00</div>
+          <div class="countdown-lbl">Seconds</div>
+        </div>
+      </div>
+
+      <div>
+        <button id="btn-enter-wedding" class="btn-enter-wedding gold-gradient-bg">
+          <span>Enter Our Wedding</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="welcome-footer">
+      17 – 19 February 2027 • Royal Palace Grounds, Jaipur, Rajasthan
+    </footer>
+  </section>
+
+  <!-- ========================================================================
+       PAGE 3 TO 8: COMPLETE ROYAL WEDDING PORTAL (STAGE 3)
+  ======================================================================== -->
+  <div id="stage-main" class="stage-container">
+    
+    <!-- STICKY ROYAL NAVIGATION BAR -->
+    <nav id="royal-nav" class="royal-nav">
+      <div id="reading-progress" class="reading-progress-bar"></div>
+
+      <div class="nav-container">
+        <!-- Brand -->
+        <a href="#stage-main" class="nav-brand">
+          <svg class="crown-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.735H5.81a1 1 0 0 1-.957-.735L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"></path></svg>
+          <div>
+            <span class="nav-brand-title">Aarav &amp; Priya</span>
+            <span class="nav-brand-sub">Jaipur • Feb 2027</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="nav-links">
+          <a href="#story" class="nav-link active" data-section="story">Our Story</a>
+          <a href="#celebrations" class="nav-link" data-section="celebrations">Celebrations</a>
+          <a href="#gallery" class="nav-link" data-section="gallery">Gallery</a>
+          <a href="#film" class="nav-link" data-section="film">Wedding Film</a>
+          <a href="#memories" class="nav-link" data-section="memories">Guestbook</a>
+        </div>
+
+        <!-- Right Side Nav Actions -->
+        <div class="nav-actions">
+          <button id="btn-nav-audio" class="btn-nav-audio" title="Toggle background music">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+            <span class="hidden md:inline">Play Music</span>
+          </button>
+
+          <button id="btn-audio-mixer-toggle" class="btn-nav-icon" title="Classical Sound Mixer">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+          </button>
+
+          <!-- Audio Mixer Popover -->
+          <div id="audio-mixer-popover" class="audio-mixer-popover">
+            <div class="mixer-header">
+              <span>Royal Soundscape</span>
+              <button id="btn-close-mixer" style="color: rgba(245,230,196,0.7);"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+            </div>
+            <p class="mixer-desc">Tanpura Drone • Raag Yaman Sitar • Soft Tabla</p>
+            <div class="slider-group">
+              <div class="slider-labels">
+                <span>Ambience Volume</span>
+                <span id="volume-percent-text">53%</span>
+              </div>
+              <input id="volume-slider" type="range" min="0.04" max="0.45" step="0.01" value="0.24" class="volume-slider" />
+            </div>
+            <button id="btn-chime-bell" class="btn-chime-bell">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path></svg>
+              <span>Chime Temple Bell</span>
+            </button>
+          </div>
+
+          <button id="btn-return-card" class="btn-return-card">
+            <span>Card</span>
+          </button>
+
+          <button id="btn-menu-toggle" class="btn-menu-toggle" aria-label="Toggle navigation menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Drawer -->
+      <div id="mobile-nav-drawer" class="mobile-nav-drawer">
+        <a href="#story" class="mobile-nav-link" data-section="story">01. Our Love Story</a>
+        <a href="#celebrations" class="mobile-nav-link" data-section="celebrations">02. Six Royal Celebrations</a>
+        <a href="#gallery" class="mobile-nav-link" data-section="gallery">03. Cinematic Gallery</a>
+        <a href="#film" class="mobile-nav-link" data-section="film">04. Wedding Film</a>
+        <a href="#memories" class="mobile-nav-link" data-section="memories">05. Guestbook &amp; Photos</a>
+        <button class="mobile-nav-link" data-section="invitation" style="color: var(--gold-primary); margin-top: 0.5rem;">
+          View Digital Invitation Card
+        </button>
+      </div>
+    </nav>
+
+    <!-- ====================================================================
+         EDITORIAL ROYAL HERO BANNER
+    ==================================================================== -->
+    <header class="section-wrapper hero-banner">
+      <div class="jali-lattice"></div>
+      <svg class="palace-skyline" preserveAspectRatio="none"><use href="#icon-palace-skyline"></use></svg>
+
+      <div class="section-container hero-grid">
+        <div class="hero-text-side">
+          <span class="badge-shubh-vivah">Shubh Vivah • Jaipur</span>
+
+          <h1 class="hero-main-title">
+            Aarav Singh <br />
+            <span style="font-style: italic; color: var(--gold-primary); font-weight: 300;">&amp;</span> Priya Rathore
+          </h1>
+
+          <p class="hero-date-loc">17 – 19 February 2027 • Royal Palace Grounds</p>
+
+          <div class="hero-btn-row">
+            <button id="btn-hero-celebrations" class="btn-hero-primary gold-gradient-bg">Celebrations</button>
+            <button id="btn-share-wedding" class="btn-hero-share">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+              <span>Share</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="couple-arch-container">
+          <div class="couple-arch-wrap">
+            <div class="arch-glow"></div>
+            <div class="arch-bevel"></div>
+            <div class="arch-frame">
+              <img 
+                src="https://images.pexels.com/photos/2959192/pexels-photo-2959192.jpeg?auto=compress&cs=tinysrgb&w=1400" 
+                alt="Aarav Singh and Priya Rathore" 
+                onerror="this.src=window.createIndianWeddingFallback('AARAV & PRIYA', 'JAIPUR 2027')"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ====================================================================
+         SECTION 1: OUR STORY & COUPLE INTRODUCTION
+    ==================================================================== -->
+    <section id="story" class="section-wrapper section-cream">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title dark">The Couple &amp; Journey</h2>
+          <div class="section-divider">
+            <div class="divider-line-group">
+              <span class="divider-line" style="background: linear-gradient(90deg, transparent, #8B1E32);"></span>
+              <svg class="divider-icon" style="color: #8B1E32;"><use href="#icon-divider-crest"></use></svg>
+              <span class="divider-line right" style="background: linear-gradient(270deg, transparent, #8B1E32);"></span>
+            </div>
+            <span class="divider-subtitle dark">2022 — 2027</span>
+          </div>
+        </div>
+
+        <!-- Couple Introduction Cards -->
+        <div class="couple-cards-grid">
+          <div class="couple-card">
+            <span class="couple-card-role">The Groom • Jaipur</span>
+            <h3 class="couple-card-name">Aarav Singh</h3>
+            <p class="couple-card-parents">S/O Vikramaditya &amp; Gayatri Singh</p>
+          </div>
+
+          <div class="couple-card">
+            <span class="couple-card-role">The Bride • Jodhpur</span>
+            <h3 class="couple-card-name">Priya Rathore</h3>
+            <p class="couple-card-parents">D/O Rajendra &amp; Sunita Rathore</p>
+          </div>
+        </div>
+
+        <!-- 4-Milestone Visual Love Story Timeline -->
+        <div id="timeline-container" class="timeline-grid"></div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 2: SIX ROYAL WEDDING CELEBRATIONS
+    ==================================================================== -->
+    <section id="celebrations" class="section-wrapper" style="background: linear-gradient(180deg, #1A0308 0%, #26050C 50%, #160307 100%);">
+      <div class="jali-lattice"></div>
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Six Celebrations</h2>
+          <div class="section-divider">
+            <div class="divider-line-group">
+              <span class="divider-line"></span>
+              <svg class="divider-icon"><use href="#icon-divider-crest"></use></svg>
+              <span class="divider-line right"></span>
+            </div>
+            <span class="divider-subtitle">17 – 19 Feb 2027 • Jaipur</span>
+          </div>
+        </div>
+
+        <!-- Celebrations Grid (Populated dynamically) -->
+        <div id="celebrations-container" class="celebrations-grid"></div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 3: CINEMATIC GALLERY
+    ==================================================================== -->
+    <section id="gallery" class="section-wrapper" style="background: #140205; border-top: 1px solid rgba(212,175,55,0.25);">
+      <div class="jali-lattice"></div>
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">Cinematic Gallery</h2>
+          <div class="section-divider">
+            <div class="divider-line-group">
+              <span class="divider-line"></span>
+              <svg class="divider-icon"><use href="#icon-divider-crest"></use></svg>
+              <span class="divider-line right"></span>
+            </div>
+            <span class="divider-subtitle">Memories in High Definition</span>
+          </div>
+        </div>
+
+        <!-- Filter Buttons Container -->
+        <div id="gallery-filters-container" class="gallery-filters"></div>
+
+        <!-- Gallery Grid Container -->
+        <div id="gallery-grid-container" class="gallery-grid"></div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 4: WEDDING FILM (CINEMA SHOWCASE)
+    ==================================================================== -->
+    <section id="film" class="section-wrapper" style="background: #160307; border-top: 1px solid rgba(212,175,55,0.25);">
+      <div class="jali-lattice"></div>
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">The Wedding Film</h2>
+          <div class="section-divider">
+            <div class="divider-line-group">
+              <span class="divider-line"></span>
+              <svg class="divider-icon"><use href="#icon-divider-crest"></use></svg>
+              <span class="divider-line right"></span>
+            </div>
+            <span class="divider-subtitle">4K Cinema • Jaipur</span>
+          </div>
+        </div>
+
+        <!-- Film Player Container -->
+        <div class="film-player-wrap">
+          <!-- Poster View with Play Button -->
+          <div id="film-poster-view" class="film-poster-view">
+            <img 
+              src="https://images.pexels.com/photos/2781104/pexels-photo-2781104.jpeg?auto=compress&cs=tinysrgb&w=1400" 
+              alt="Aarav and Priya Royal Wedding Film Cover" 
+              onerror="this.src=window.createIndianWeddingFallback('ECHOES OF FOREVER', '4K ROYAL FILM')"
+            />
+            <div class="film-gradient-overlay"></div>
+            <div class="film-center-controls">
+              <h3 style="font-family: var(--font-cinzel); font-size: 2.25rem; color: #FFF8EC; font-weight: 400;">
+                Aarav &amp; Priya
+              </h3>
+              <button id="btn-play-film" class="btn-play-film gold-gradient-bg" aria-label="Play Royal Wedding Film">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span>Watch Film</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Video View -->
+          <div id="film-video-view" class="film-active-video-view">
+            <video 
+              id="wedding-film-video" 
+              src="https://assets.mixkit.co/videos/preview/mixkit-bride-and-groom-walking-together-in-a-garden-42404-large.mp4" 
+              controls 
+              playsinline
+            ></video>
+            <button id="btn-close-film" class="btn-close-film">Close</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 5: GUESTBOOK & PHOTO UPLOAD
+    ==================================================================== -->
+    <section id="memories" class="section-wrapper section-cream">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title dark">Guestbook &amp; Memories</h2>
+          <div class="section-divider">
+            <div class="divider-line-group">
+              <span class="divider-line" style="background: linear-gradient(90deg, transparent, #8B1E32);"></span>
+              <svg class="divider-icon" style="color: #8B1E32;"><use href="#icon-divider-crest"></use></svg>
+              <span class="divider-line right" style="background: linear-gradient(270deg, transparent, #8B1E32);"></span>
+            </div>
+            <span class="divider-subtitle dark">Blessings &amp; Photos</span>
+          </div>
+        </div>
+
+        <div class="guestbook-layout">
+          <!-- Left Column: Wish & Photo Form -->
+          <div class="guestbook-form-card">
+            <div class="form-header-title">
+              <div class="form-icon-circle">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path><path d="M14.8 7.5a1.84 1.84 0 0 0-2.6 0l-.2.2-.2-.2a1.84 1.84 0 1 0-2.6 2.6L12 12.7l2.8-2.6a1.84 1.84 0 0 0 0-2.6z"></path></svg>
+              </div>
+              <h3 style="font-family: var(--font-cinzel); font-size: 1.35rem; color: #2B060E;">Leave a Blessing</h3>
+            </div>
+
+            <form id="guestbook-form" class="guestbook-form">
+              <input id="guest-name" type="text" placeholder="Your Name *" class="guest-input" required />
+              <input id="guest-relation" type="text" placeholder="Relation / City" class="guest-input" />
+              <textarea id="guest-message" rows="3" placeholder="Your blessing *" class="guest-input" style="resize: none;" required></textarea>
+
+              <label id="upload-dropzone" class="upload-dropzone">
+                <div id="upload-placeholder" style="display: flex; align-items: center; gap: 0.5rem;">
+                  <svg width="18" height="18" style="color: #8B1E32;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                  <span style="font-family: var(--font-sans); font-size: 0.75rem; color: #3B0813; font-weight: 500;">
+                    Upload Photo (Optional)
+                  </span>
+                </div>
+
+                <div id="upload-preview-wrap" class="upload-preview-wrap" style="display: none;">
+                  <img id="upload-preview-img" src="" alt="Preview" class="upload-preview-img" />
+                  <span id="upload-filename-text" class="upload-filename-txt"></span>
+                </div>
+
+                <input id="photo-file-input" type="file" accept="image/*" style="display: none;" />
+              </label>
+
+              <div id="form-feedback" class="form-feedback" style="display: none;"></div>
+
+              <button type="submit" class="btn-submit-wish">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                <span>Post Blessing</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Right Column: Live Blessings Feed -->
+          <div id="blessings-wall" class="blessings-wall"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         FOOTER & STUDIO ATTRIBUTION
+    ==================================================================== -->
+    <footer class="royal-footer">
+      <div class="footer-content">
+        <svg width="48" height="48" style="color: var(--gold-primary); margin-bottom: 0.75rem;"><use href="#icon-royal-lotus-crest"></use></svg>
+
+        <h2 class="footer-title">
+          Aarav <span style="font-style: italic; color: var(--gold-primary);">&amp;</span> Priya
+        </h2>
+
+        <p class="footer-sub">17 – 19 Feb 2027 • Jaipur, Rajasthan</p>
+
+        <div class="section-divider">
+          <div class="divider-line-group" style="max-width: 200px;">
+            <span class="divider-line"></span>
+            <svg class="divider-icon"><use href="#icon-divider-crest"></use></svg>
+            <span class="divider-line right"></span>
+          </div>
+        </div>
+
+        <div class="footer-credits">
+          <p>Rajputana Royal Frames Studio • Jaipur</p>
+          <p style="color: rgba(212,175,55,0.85);">Forever Wedding</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Back-to-Top Button -->
+    <button id="btn-back-to-top" class="btn-back-to-top" aria-label="Scroll back to top">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+    </button>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 1: EVENT DETAILS & CEREMONY GALLERY
+  ======================================================================== -->
+  <div id="event-modal" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="event-modal-card">
+      <button id="btn-close-event-modal" class="btn-close-modal" aria-label="Close event modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <span id="event-modal-day" class="event-modal-day"></span>
+      <h3 id="event-modal-name" class="event-modal-name"></h3>
+
+      <div class="event-modal-meta">
+        <span id="event-modal-date"></span>
+        <span>•</span>
+        <span id="event-modal-venue"></span>
+        <span>•</span>
+        <span id="event-modal-dresscode"></span>
+      </div>
+
+      <p id="event-modal-desc" style="margin-top: 1rem; font-size: 1.05rem; color: rgba(251,247,240,0.9);"></p>
+
+      <div style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 1.5rem; font-size: 0.8125rem; color: var(--gold-accent); font-family: var(--font-sans);">
+        <div><strong>Ritual Highlight:</strong> <span id="event-modal-highlight"></span></div>
+        <div><strong>Hospitality:</strong> <span id="event-modal-note"></span></div>
+      </div>
+
+      <div id="event-modal-gallery" class="event-modal-gallery"></div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL 2: FULL-SCREEN GALLERY LIGHTBOX
+  ======================================================================== -->
+  <div id="lightbox-modal" class="lightbox-backdrop" role="dialog" aria-modal="true">
+    <button id="btn-close-lightbox" class="btn-close-modal" aria-label="Close full-screen viewer">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+
+    <button id="btn-lightbox-prev" class="btn-lightbox-nav prev" aria-label="Previous gallery item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </button>
+
+    <button id="btn-lightbox-next" class="btn-lightbox-nav next" aria-label="Next gallery item">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+
+    <div class="lightbox-content-box">
+      <div id="lightbox-media-frame" class="lightbox-media-frame"></div>
+      <div class="lightbox-caption-box">
+        <div id="lightbox-counter" class="lightbox-counter"></div>
+        <h4 id="lightbox-title" class="lightbox-item-title"></h4>
+        <p id="lightbox-caption" class="lightbox-item-caption"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Popover -->
+  <div id="toast-notice" class="toast-notice"></div>
+
+  <!-- ========================================================================
+       APPLICATION SCRIPTS (DATA -> AUDIO -> APP CONTROLLER)
+  ======================================================================== -->
+  <script src="js/data.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
